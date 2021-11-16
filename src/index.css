@@ -15,6 +15,7 @@ code {
 
 .navbar {
   background-color: #1e3d59 !important;
+  box-shadow: 0 0.1rem 0.8rem black;
 }
 
 .navbar-brand {
@@ -97,3 +98,15 @@ code {
 }
 
 /* Nav link ends */
+
+/* Dashboard Starts */
+
+#dashboard {
+  font-size: 3rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: bold;
+  color: #1e3d59;
+}
+
+
+/* Dashboard ends */
