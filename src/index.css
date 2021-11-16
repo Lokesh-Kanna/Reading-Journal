@@ -12,3 +12,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  background-color: #1e3d59 !important;
+}
+
+.navbar-brand {
+  color: whitesmoke !important;
+}
+
+.nav-link {
+  color: whitesmoke !important;
+  font-family: 'Raleway', 'sans-serif' !important; 
+}
+
+.nav-link:hover {
+  zoom: 1.1;
+  font-weight: bold;
+  background-color: #ff6e40 !important;
+  padding: 0.1rem !important;
+}
+
+.vl {
+  border-left: 0.1rem solid #ff6e40;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.btn {
+  border-color: #f79e82;
+  color: #f79e82;
+}
+
+.btn:hover {
+  border-color: #ff6e40;
+  background-color: #ff6e40 !important;
+}
