@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif, 'Raleway';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f5f0e1;
@@ -21,16 +21,17 @@ code {
   color: whitesmoke !important;
 }
 
+/* Nav link starts */
+
 .nav-link {
   color: whitesmoke !important;
   font-family: 'Raleway', 'sans-serif' !important; 
+  transition: all 300ms ease-in;
 }
 
 .nav-link:hover {
-  zoom: 1.1;
-  font-weight: bold;
-  background-color: #ff6e40 !important;
-  padding: 0.1rem !important;
+  font-weight: bold !important;
+  color: #d66a49 !important;
 }
 
 .vl {
@@ -48,3 +49,51 @@ code {
   border-color: #ff6e40;
   background-color: #ff6e40 !important;
 }
+
+
+.navbar-nav li {
+  display: block;
+  padding: 0.5rem 0 0.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+
+.navbar-nav li:after,
+.navbar-nav li:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  display: block;
+  height: 1px;
+  transition: all 0.3s ease;
+  margin-top: 2px;
+  transition: all 300ms ease-in;
+}
+
+.navbar-nav li:after {
+  bottom: 25%;
+  left: 0;
+}
+
+.navbar-nav li:before {
+  top: 25%;
+  right: 0;
+}
+
+.navbar-nav li:hover::after {
+  width: 100%;
+  height: 1px;
+  bottom: 25%;
+  background-color: #fff;
+}
+.navbar-nav li:hover::before {
+  width: 100%;
+  height: 1px;
+  top: 25%;
+  background-color: #fff;
+}
+
+/* Nav link ends */
