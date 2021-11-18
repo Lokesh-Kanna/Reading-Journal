@@ -14,7 +14,7 @@ code {
 }
 
 .navbar {
-  background-color: #1e3d59 !important;
+  background-color: #315f72 !important;
   box-shadow: 0 0.1rem 0.8rem black;
 }
 
@@ -110,3 +110,68 @@ code {
 
 
 /* Dashboard ends */
+
+/* Book card list start  */
+
+.carddisp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 5rem; 
+}
+
+.card-body {
+  background-color: #efb5a3 !important;
+  box-shadow: 1px 1px 5px black !important;
+}
+
+.card-header {
+  background-color: #efb5a3;
+  font-size: 2rem !important;
+  align-items: center;
+}
+
+.titlerate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.starrate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card-img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover !important;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Book card list end  */
+
+/* TBR table starts */
+
+.tablediv {
+  margin: 2rem;
+}
+
+.tblnms {
+  font-size: 1.5rem;
+}
+
+.tblauthnms {
+  color: rgb(145, 145, 145);
+}
+
+
+/* TBR table ends */
