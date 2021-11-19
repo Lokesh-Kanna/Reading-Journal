@@ -32,7 +32,7 @@ export function NavBar() {
               <Link to="/book-list" className="nav-link">Book List</Link>
             </li>
             <li>
-              <Link to="" className="nav-link">Add Book</Link>
+              <Link to="/add-book" className="nav-link">Add Book</Link>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
