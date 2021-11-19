@@ -1,27 +1,12 @@
 import "./App.css";
 import * as React from "react";
-import Button from "@mui/material/Button";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavBar } from "./NavBar";
-import { grey } from "@mui/material/colors";
-import { styled } from "@mui/material/styles";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { DistributeBL, ExpandMore } from "./DistributeBL";
 import { DistributeTBR } from "./DistributeTBR";
-import TextField from "@mui/material/TextField";
 import { useState } from "react";
+import { AddBook } from "./AddBook";
 
 function App() {
   const TBR = [
@@ -196,78 +181,6 @@ function Home() {
       <Typography id="dashboard">
         <u>Dashboard</u>
       </Typography>
-    </div>
-  );
-}
-
-function AddBook({books, addbook}) {
-  const [name, setName] = useState("");
-  const [rating, setRating] = useState("");
-  const [pubyear, setPubyear] = useState("");
-  const [author, setAuthor] = useState("");
-  const [genre, setGenre] = useState("");
-  const [url, setUrl] = useState("");
-  const [summary, setSummary] = useState("");
-
-  return (
-    <div>
-      <NavBar />
-      <div className="form-div">
-        <TextField
-          className="outlined-basic"
-          color="warning"
-          label="Book Name"
-          variant="outlined"
-          onChange={(event) => setName(event.target.value)}
-        />
-        <TextField
-          className="outlined-basic"
-          label="Rating"
-          variant="outlined"
-          onChange={(event) => setRating(event.target.value)}
-        />
-        <TextField
-          className="outlined-basic"
-          label="Published Year"
-          variant="outlined"
-          onChange={(event) => setPubyear(event.target.value)}
-        />
-        <TextField
-          className="outlined-basic"
-          label="Author"
-          variant="outlined"
-          onChange={(event) => setAuthor(event.target.value)}
-        />
-        <TextField
-          className="outlined-basic"
-          label="Genre"
-          variant="outlined"
-          onChange={(event) => setGenre(event.target.value)}
-        />
-        <TextField
-          className="outlined-basic"
-          label="Image URL"
-          variant="outlined"
-          onChange={(event) => setUrl(event.target.value)}
-        />
-        <TextField
-          className="outlined-basic"
-          label="Summary"
-          variant="outlined"
-          onChange={(event) => setSummary(event.target.value)}
-        />
-        <Button 
-          className="submit" 
-          variant="contained"
-          onClick={() => {
-            const addedBook = { name, rating, author, pubyear, genre, url, summary }
-            addbook(addedBook);
-            // console.log(...books, newBook)
-          }}
-          >
-          Submit
-        </Button>
-      </div>
     </div>
   );
 }

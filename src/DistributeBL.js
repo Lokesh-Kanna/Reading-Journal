@@ -63,7 +63,7 @@ function BookList({ name, author, rating, year, genre, img, summary, id }) {
         component="img"
         height="194"
         image={img}
-        alt="Paella dish" />
+        alt="Book image" />
       <CardContent className="card-content">
         <Typography variant="body2" color="text.secondary">
           <b>Genre:</b> <br></br> {genre}
