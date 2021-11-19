@@ -201,7 +201,6 @@ function Home() {
 }
 
 function AddBook({books, addbook}) {
-  // const [newbook, setNewbook] = useState(books);
   const [name, setName] = useState("");
   const [rating, setRating] = useState("");
   const [pubyear, setPubyear] = useState("");
