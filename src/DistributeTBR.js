@@ -1,6 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 import { NavBar } from "./NavBar";
-import { PinkCheckboxes, OrangeCheckboxes, GreenCheckboxes } from "./Checkboxes";
+import {
+  PinkCheckboxes,
+  OrangeCheckboxes,
+  GreenCheckboxes,
+} from "./Checkboxes";
 
 export function DistributeTBR({ books }) {
   return (
@@ -19,7 +23,7 @@ export function DistributeTBR({ books }) {
           </thead>
           <tbody>
             {books.map((book, index) => {
-              return (<Tr name={book.name} author={book.author} id={index} />);
+              return <Tr name={book.name} author={book.author} id={index} />;
             })}
           </tbody>
         </table>
