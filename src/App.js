@@ -7,6 +7,7 @@ import { DistributeBL, ExpandMore } from "./DistributeBL";
 import { DistributeTBR } from "./DistributeTBR";
 import { useState, useEffect } from "react";
 import { AddBook } from "./AddBook";
+import { EditMovie } from "./EditMovie";
 
 function App() {
   const TBR = [
@@ -154,7 +155,7 @@ function App() {
   };
 
   // useEffect(() => {
-  //   fetch("https://6188a459d0821900178d740b.mockapi.io/Books")
+  //   fetch("")
   //   .then(data => data.json())
   //   .then(book => setBooks(book))
   // })
@@ -167,6 +168,10 @@ function App() {
         <Route
           path="/book-list"
           element={<DistributeBL books={Books} setBooks={setBooks} />}
+        />
+        <Route
+          path="/book-list/edit/:id"
+          element={<EditMovie books={Books} setBooks={setBooks} />}
         />
         <Route path="/" element={<Home />} />
       </Routes>

@@ -1,15 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, 'Raleway';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif, "Raleway";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f5f0e1;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -26,7 +26,7 @@ code {
 
 .nav-link {
   color: whitesmoke !important;
-  font-family: 'Raleway', 'sans-serif' !important; 
+  font-family: "Raleway", "sans-serif" !important;
   transition: all 300ms ease-in;
 }
 
@@ -51,7 +51,6 @@ code {
   background-color: #ff6e40 !important;
 }
 
-
 .navbar-nav li {
   display: block;
   padding: 0.5rem 0 0.5rem 0;
@@ -60,7 +59,6 @@ code {
   align-items: center;
   color: #fff;
 }
-
 
 .navbar-nav li:after,
 .navbar-nav li:before {
@@ -103,11 +101,10 @@ code {
 
 #dashboard {
   font-size: 3rem;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: bold;
   color: #1e3d59;
 }
-
 
 /* Dashboard ends */
 
@@ -117,16 +114,16 @@ code {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin: 2rem 5rem; 
+  margin: 2rem 5rem;
 }
 
 .card-body {
-  background-color: #efb5a3 !important;
+  background-color: rgb(49, 133, 98) !important;
   box-shadow: 1px 1px 5px black !important;
 }
 
 .card-header {
-  background-color: #efb5a3;
+  background-color: rgb(49, 133, 98);
   font-size: 2rem !important;
   align-items: center;
 }
@@ -156,7 +153,6 @@ code {
   justify-content: space-between;
 }
 
-
 /* Book card list end  */
 
 /* TBR table starts */
@@ -172,7 +168,6 @@ code {
 .tblauthnms {
   color: rgb(145, 145, 145);
 }
-
 
 /* TBR table ends */
 
@@ -191,7 +186,7 @@ code {
 }
 
 .submit {
-  background-color: #315F72 !important;
+  background-color: #315f72 !important;
 }
 
 /* Add Book ends */

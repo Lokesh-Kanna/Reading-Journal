@@ -12,6 +12,8 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import DeleteIcon from "@mui/icons-material/Delete";
+import CreateIcon from "@mui/icons-material/Create";
+import { useNavigate } from "react-router-dom";
 
 export function DistributeBL({ books, setBooks }) {
   return (
@@ -63,6 +65,8 @@ function BookList({
 }) {
   const [expanded, setExpanded] = React.useState(false);
 
+  const navigate = useNavigate();
+
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -72,7 +76,10 @@ function BookList({
       <CardHeader
         className="card-header"
         avatar={
-          <Avatar sx={{ backgroundColor: "#efb5a3" }} aria-label="recipe">
+          <Avatar
+            sx={{ backgroundColor: "rgb(49, 133, 98)" }}
+            aria-label="recipe"
+          >
             <img src="https://img.icons8.com/fluency/40/000000/book.png" />
           </Avatar>
         }
@@ -115,6 +122,14 @@ function BookList({
         </CardContent>
       </Collapse>
       <CardActions>
+        <IconButton
+          aria-label="delete"
+          onClick={() => {
+            navigate("/book-list/edit/" + id);
+          }}
+        >
+          <CreateIcon />
+        </IconButton>
         <IconButton
           aria-label="delete"
           color="error"
