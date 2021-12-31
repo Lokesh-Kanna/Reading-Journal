@@ -186,7 +186,7 @@ function Home() {
     <div>
       <NavBar />
       <Typography id="dashboard">
-        <u>Dashboard</u>
+        Hello User! Welcome to reading list app!
       </Typography>
     </div>
   );
